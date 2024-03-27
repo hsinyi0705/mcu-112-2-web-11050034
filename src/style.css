@@ -17,6 +17,14 @@ nav {
   margin-bottom: 10px;
 }
 
+a,
+a:active,
+a:hover,
+a:focus {
+  color: black;
+  text-decoration: none;
+}
+
 ul {
   padding-left: 0;
   list-style: none;
@@ -50,6 +58,10 @@ table {
 table th {
   background-color: #777;
   color: white;
+}
+
+tr:hover {
+  background-color: yellow;
 }
 
 th,
