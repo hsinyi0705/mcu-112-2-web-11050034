@@ -8,3 +8,6 @@ console.log("Is Show = ", isShow);
 
 let creatDate = new Date(); //當下日期
 console.log("Creat Date", creatDate);
+
+let modifyDate: Date | undefined = undefined;
+console.log("ModifyDate Date", modifyDate);
