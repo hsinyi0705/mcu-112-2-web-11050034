@@ -3,6 +3,8 @@ class classA {
     constructor() {}
     
     propA: string;
+
+    methodName(): void {}   
 }
 */
 
@@ -13,7 +15,11 @@ export class Product {
     public company: string,
     public price: number,
     public isShow: boolean,
-    public creatDate: Date,
+    public createDate: Date,
     public modifyDate?: Date
   ) {}
+
+  setDisplay(isShow: boolean): void {
+    this.isShow = isShow;
+  }
 }
