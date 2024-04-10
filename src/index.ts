@@ -1,5 +1,6 @@
 // let obj = { propA: value };
 // const arr = [1, 2, 3, 4];
+// function funName(): void {}
 
 import { Product } from "./product";
 
@@ -23,5 +24,12 @@ const products = [
     undefined
   ),
 ];
+
+setProductDisplay(products[1], false);
+
 console.log(products);
 console.table(products);
+
+function setProductDisplay(product: Product, isShow: boolean): void {
+  product.isShow = isShow;
+}
