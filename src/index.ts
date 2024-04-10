@@ -6,5 +6,5 @@ console.log("Product Id = ", productId);
 console.log("Product Name = ", productName);
 console.log("Is Show = ", isShow);
 
-let creatDate = undefined;
+let creatDate = new Date(); //當下日期
 console.log("Creat Date", creatDate);
