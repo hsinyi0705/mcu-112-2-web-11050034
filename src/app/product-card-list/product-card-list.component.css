@@ -1,0 +1,15 @@
+:host {
+  display: block;
+}
+
+div.container {
+  /*border: 1px solid red;*/
+  display: flex;
+  flex-direction: row; /*橫向排列*/
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  flex-basis: calc(20% - 40px);
+}
