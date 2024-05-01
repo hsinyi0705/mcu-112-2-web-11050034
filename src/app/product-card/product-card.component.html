@@ -7,7 +7,15 @@
   <span>{{ createDate | date:'yyyy-MM-dd' }}</span>
 </div>
 
-<div>{{ authors }}</div>
+<div>
+  @for (author of authors; track author) {
+  <span>{{ author }}</span>
+  @if (!$last) {
+  <span>、</span>
+  }
+  <!-- 透過 if 處理，讓最後一個不要有、 -->
+  }
+</div>
 
 <div class="company">
   <span>{{ company }}</span>

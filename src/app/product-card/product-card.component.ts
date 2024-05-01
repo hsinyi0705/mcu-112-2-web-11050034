@@ -11,7 +11,7 @@ import { Component, EventEmitter, HostBinding, Input, Output, booleanAttribute, 
 export class ProductCardComponent {
   @Input({ required: true, transform: numberAttribute }) id!: number; /**一定要丟東西進來，轉型別 */
   @Input() productName!: string;
-  @Input() authors!: string;
+  @Input() authors!: string[];
   @Input() company!: string;
   @Input() imgUrl!: string;
 
