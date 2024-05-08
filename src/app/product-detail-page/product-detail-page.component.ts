@@ -15,18 +15,24 @@ export class ProductDetailPageComponent implements OnInit {
   @Input({ transform: numberAttribute })
   id!: number;
 
-  private router = inject(Router);
+  router = inject(Router);
 
   product!: Product;
 
-  private ProductService = inject(ProductService);
+  private productService = inject(ProductService);
 
   ngOnInit(): void {
-    this.product = this.ProductService.getById(this.id);
+    this.product = this.productService.getById(this.id);
   }
 
   onEdit(): void {
     this.router.navigate(['product', 'form', this.product.id]);
+  }
+
+  onRemove(): void {
+    this.productService.remove(this.product.id);
+    this.router.navigate(['products']);
+    /** 東西刪掉消失後，直接回到原始產品清單頁面 */
   }
 
   onBack(): void {
