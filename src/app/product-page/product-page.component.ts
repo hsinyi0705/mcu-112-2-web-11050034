@@ -41,6 +41,11 @@ export class ProductPageComponent implements OnInit {
     this.router.navigate(['product', 'form', product.id]);
   }
 
+  onRemove({ id }: Product): void {
+    /** 因為刪除只需要有 id 就行*/
+    this.productService.remove(id);
+  }
+
   onView(product: Product): void {
     this.router.navigate(['product', 'view', product.id]);
   }
