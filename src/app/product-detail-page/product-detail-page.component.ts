@@ -11,20 +11,13 @@ import { Router } from '@angular/router';
   templateUrl: './product-detail-page.component.html',
   styleUrl: './product-detail-page.component.css',
 })
-export class ProductDetailPageComponent implements OnInit {
-  @Input({ transform: numberAttribute })
-  id!: number;
-
+export class ProductDetailPageComponent {
+  @Input()
   router = inject(Router);
 
   product!: Product;
 
   private productService = inject(ProductService);
-
-  ngOnInit(): void {
-    this.productService.getById(this.id).subscribe((product) => (this.product = product));
-    //  要訂閱收資料
-  }
 
   onEdit(): void {
     this.router.navigate(['product', 'form', this.product.id]);

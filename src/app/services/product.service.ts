@@ -51,13 +51,11 @@ export class ProductService {
 
   getById(productId: number): Observable<Product> {
     const product = this._data.find(({ id }) => id === productId)!;
-    return of(product); /** 同步 */
+    return of(product);
   }
 
   getList(): Observable<Product[]> {
     return of(this._data);
-
-    //return of(this._data).pipe(delay(2000)); /** 非同步，delay 兩秒 */
   }
 
   add(product: Product): Observable<Product> {
