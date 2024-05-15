@@ -3,6 +3,7 @@ import { Product } from '../model/product';
 import { ProductCardListComponent } from '../product-card-list/product-card-list.component';
 import { Router } from '@angular/router';
 import { ProductService } from '../services/product.service';
+import { Subject, startWith, switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-product-page',
@@ -18,8 +19,15 @@ export class ProductPageComponent implements OnInit {
 
   products!: Product[];
 
+  private readonly refresh$ = new Subject<void>();
+
   ngOnInit(): void {
-    this.productService.getList().subscribe((products) => (this.products = products));
+    this.refresh$
+      .pipe(
+        startWith(undefined),
+        switchMap(() => this.productService.getList())
+      )
+      .subscribe((products) => (this.products = products));
   }
 
   onAdd(): void {
@@ -34,7 +42,7 @@ export class ProductPageComponent implements OnInit {
       price: 10000,
     });
 
-    this.productService.add(product).subscribe();
+    this.productService.add(product).subscribe(() => this.refresh$.next());
   }
 
   onEdit(product: Product): void {
@@ -43,7 +51,7 @@ export class ProductPageComponent implements OnInit {
 
   onRemove({ id }: Product): void {
     /** 因為刪除只需要有 id 就行*/
-    this.productService.remove(id).subscribe();
+    this.productService.remove(id).subscribe(() => this.refresh$.next());
   }
 
   onView(product: Product): void {
