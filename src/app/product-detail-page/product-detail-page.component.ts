@@ -31,9 +31,8 @@ export class ProductDetailPageComponent implements OnInit {
   }
 
   onRemove(): void {
-    this.productService.remove(this.product.id);
-    this.router.navigate(['products']);
     /** 東西刪掉消失後，直接回到原始產品清單頁面 */
+    this.productService.remove(this.product.id).subscribe(() => this.router.navigate(['products']));
   }
 
   onBack(): void {

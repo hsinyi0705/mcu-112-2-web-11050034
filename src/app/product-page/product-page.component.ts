@@ -34,7 +34,7 @@ export class ProductPageComponent implements OnInit {
       price: 10000,
     });
 
-    this.productService.add(product);
+    this.productService.add(product).subscribe();
   }
 
   onEdit(product: Product): void {
@@ -43,7 +43,7 @@ export class ProductPageComponent implements OnInit {
 
   onRemove({ id }: Product): void {
     /** 因為刪除只需要有 id 就行*/
-    this.productService.remove(id);
+    this.productService.remove(id).subscribe();
   }
 
   onView(product: Product): void {
