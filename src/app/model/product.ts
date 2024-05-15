@@ -1,4 +1,5 @@
 export class Product {
+  [x: string]: any;
   constructor(initData?: Partial<Product>) {
     Object.assign(this, initData);
     this.createDate = new Date();
