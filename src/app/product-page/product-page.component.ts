@@ -1,10 +1,10 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { AsyncPipe } from '@angular/common';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
+import { Subject, startWith, switchMap } from 'rxjs';
 import { Product } from '../model/product';
 import { ProductCardListComponent } from '../product-card-list/product-card-list.component';
-import { Router } from '@angular/router';
 import { ProductService } from '../services/product.service';
-import { Subject, startWith, switchMap } from 'rxjs';
-import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'app-product-page',
@@ -27,7 +27,6 @@ export class ProductPageComponent {
 
   onAdd(): void {
     const product = new Product({
-      id: 1,
       name: '書籍 qwe',
       authors: ['作者甲', '作者乙', '作者丙'],
       company: '博碩文化',

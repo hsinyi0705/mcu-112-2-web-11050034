@@ -1,8 +1,8 @@
-import { ProductService } from './../services/product.service';
 import { CurrencyPipe } from '@angular/common';
-import { Component, Input, inject, numberAttribute, OnInit } from '@angular/core';
-import { Product } from '../model/product';
+import { Component, Input, inject } from '@angular/core';
 import { Router } from '@angular/router';
+import { Product } from '../model/product';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-product-detail-page',
@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 })
 export class ProductDetailPageComponent {
   @Input()
-  router = inject(Router);
+  private router = inject(Router);
 
   product!: Product;
 
