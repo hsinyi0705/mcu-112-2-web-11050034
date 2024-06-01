@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "name": "書籍 A",
+      "name": "書籍A",
       "authors": [
         "作者甲",
         "作者乙",
@@ -13,6 +13,160 @@
       "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
       "createDate": "2023-10-17T00:00:00.000+08:00",
       "price": 10000
+    },
+    {
+      "name": "書籍B",
+      "authors": [
+        "作者甲",
+        "作者乙",
+        "作者丙"
+      ],
+      "company": "博碩文化",
+      "isShow": true,
+      "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+      "createDate": "2024-06-01T14:49:39.337Z",
+      "price": 10000,
+      "id": 2
+    },
+    {
+      "name": "書籍qwe",
+      "authors": [
+        "作者甲",
+        "作者乙",
+        "作者丙"
+      ],
+      "company": "博碩文化",
+      "isShow": true,
+      "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+      "createDate": "2024-06-01T14:49:40.328Z",
+      "price": 10000,
+      "id": 4
+    },
+    {
+      "name": "書籍qwe",
+      "authors": [
+        "作者甲",
+        "作者乙",
+        "作者丙"
+      ],
+      "company": "博碩文化",
+      "isShow": true,
+      "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+      "createDate": "2024-06-01T14:49:42.393Z",
+      "price": 10000,
+      "id": 5
+    },
+    {
+      "name": "書籍qwe",
+      "authors": [
+        "作者甲",
+        "作者乙",
+        "作者丙"
+      ],
+      "company": "博碩文化",
+      "isShow": true,
+      "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+      "createDate": "2024-06-01T14:49:42.600Z",
+      "price": 10000,
+      "id": 6
+    },
+    {
+      "name": "書籍qwe",
+      "authors": [
+        "作者甲",
+        "作者乙",
+        "作者丙"
+      ],
+      "company": "博碩文化",
+      "isShow": true,
+      "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+      "createDate": "2024-06-01T14:49:42.792Z",
+      "price": 10000,
+      "id": 7
+    },
+    {
+      "name": "書籍qwe",
+      "authors": [
+        "作者甲",
+        "作者乙",
+        "作者丙"
+      ],
+      "company": "博碩文化",
+      "isShow": true,
+      "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+      "createDate": "2024-06-01T14:49:43.000Z",
+      "price": 10000,
+      "id": 8
+    },
+    {
+      "name": "書籍qwe",
+      "authors": [
+        "作者甲",
+        "作者乙",
+        "作者丙"
+      ],
+      "company": "博碩文化",
+      "isShow": true,
+      "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+      "createDate": "2024-06-01T14:49:43.232Z",
+      "price": 10000,
+      "id": 9
+    },
+    {
+      "name": "書籍qwe",
+      "authors": [
+        "作者甲",
+        "作者乙",
+        "作者丙"
+      ],
+      "company": "博碩文化",
+      "isShow": true,
+      "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+      "createDate": "2024-06-01T14:49:43.433Z",
+      "price": 10000,
+      "id": 10
+    },
+    {
+      "name": "書籍qwe",
+      "authors": [
+        "作者甲",
+        "作者乙",
+        "作者丙"
+      ],
+      "company": "博碩文化",
+      "isShow": true,
+      "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+      "createDate": "2024-06-01T14:49:43.631Z",
+      "price": 10000,
+      "id": 11
+    },
+    {
+      "name": "書籍qwe",
+      "authors": [
+        "作者甲",
+        "作者乙",
+        "作者丙"
+      ],
+      "company": "博碩文化",
+      "isShow": true,
+      "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+      "createDate": "2024-06-01T14:49:43.863Z",
+      "price": 10000,
+      "id": 12
+    },
+    {
+      "name": "書籍 qwe",
+      "authors": [
+        "作者甲",
+        "作者乙",
+        "作者丙"
+      ],
+      "company": "博碩文化",
+      "isShow": true,
+      "imgUrl": "https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img",
+      "createDate": "2024-06-01T15:00:34.453Z",
+      "price": 10000,
+      "id": 13
     }
   ]
 }

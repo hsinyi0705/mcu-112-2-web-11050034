@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 import { Product } from '../model/product';
-import { Observable, delay, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -54,7 +54,7 @@ export class ProductService {
     return of(product);
   }
 
-  getList(): Observable<Product[]> {
+  getList(name: string | undefined, pageIndex: number, pageSize: number): Observable<Product[]> {
     return of(this._data);
   }
 
