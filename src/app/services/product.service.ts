@@ -6,6 +6,7 @@ import { Product } from '../model/product';
   providedIn: 'root',
 })
 export class ProductService {
+  [x: string]: any;
   private _data = [
     new Product({
       id: 1,
@@ -56,6 +57,10 @@ export class ProductService {
 
   getList(name: string | undefined, pageIndex: number, pageSize: number): Observable<Product[]> {
     return of(this._data);
+  }
+
+  getCount(name?: string): Observable<number> {
+    throw new Error('NO');
   }
 
   add(product: Product): Observable<Product> {
